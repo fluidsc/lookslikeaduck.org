@@ -1,0 +1,11 @@
+﻿---
+layout: base.njk
+title: Home
+---
+
+<ul>
+{% for post in collections.post %}
+  <li>{{ post.content | safe }}</li>
+{% endfor %}
+</ul>
+

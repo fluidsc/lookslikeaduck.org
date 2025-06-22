@@ -1,3 +1,22 @@
+/* Fonts definitions */
+@font-face {
+    font-family: 'dot_digital-7regular';
+    src: url('/fonts/dot_digital-7-webfont.woff2') format('woff2'),
+         url('/fonts/dot_digital-7-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'high_speedregular';
+    src: url('/fonts/highspeed-webfont.woff2') format('woff2'),
+         url('/fonts/highspeed-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body, h1, p {
     margin: 0;
     padding: 0;
@@ -18,7 +37,7 @@ header {
     color: white;
     padding: 15px 20px;
     display: flex;
-    justify-content:center;
+    justify-content:space-around;
     align-items: center;
 }
 
@@ -29,8 +48,20 @@ header p {
     margin: 12px;
 }
 
-header p > img {
-    height: 64px;
+header p > a > img {
+    height: 120px;
+    /*transform: rotate(180deg);
+    opacity: 0.65;
+     filter: grayscale(90%); */
+     filter: brightness(0.55) grayscale(0.85);
+     transition: all 0.5s ease-out allow-discrete;
+}
+
+header p > a > img:hover {
+     filter: brightness(1.0);
+     rotate: -1deg;
+     transition: all 0.5s ease-out allow-discrete;
+
 }
 
 nav a {
@@ -47,10 +78,10 @@ nav a:hover {
 main {
     flex: 1;
     padding: 20px;
-    margin: 20px 75px 20px 75px;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* border-radius: 12px; */
+    background: #222;
+    /* margin: 20px 75px 20px 75px; */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
     width: auto;
 }
 
@@ -61,3 +92,42 @@ footer {
     padding: 15px 0;
     margin-top: auto;
 }
+
+.printer-paper {
+    position: relative;
+    --f: .5; /* fraction of line the hole occupies */
+	--b: 1.5lh; /* at least 1lh to fit */
+	--l: 1px; /* dashed line thickness */
+    --r: random(1,45); /* random rotation */
+	display: block;
+    overflow: hidden;
+	margin: 1em auto;
+	border: solid 0 #0000;
+	border-width: 0 var(--b);
+	padding:  1ch;
+	max-width: 43em;
+	border-radius: 3px;
+	background: 
+		conic-gradient(at var(--l), #0000 75%, silver 25%) 
+			0 -.125lh/ calc(100% - var(--l)) .5lh padding-box,
+		linear-gradient(rgb(209, 240, 232) 50%, whitesmoke 0) 0 0/ 1% 2lh;
+	font: 1.25em/ 1.5 dot_digital-7regular;
+    color: rgba(0,0,0,0.55);
+    tab-size: 2;
+	white-space: pre-wrap;
+    mask: 
+		radial-gradient(calc(.5*var(--f)*1lh) at calc(.5*var(--b)), 
+				#0000 calc(100% - 1px), red) 
+			0 0/ calc(100% - var(--b)) 1lh no-clip;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 1.1);
+    z-index: 0;
+    transition: all var(--speed, 800ms) var(--ease, ease);
+    filter: brightness(0.75);
+}
+ 
+.printer-paper:hover {
+    z-index: 100 !important;
+    transition: all var(--speed, 800ms) var(--ease, ease);
+    filter: brightness(1.0);
+}
+
