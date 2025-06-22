@@ -50,11 +50,6 @@ header p {
 
 header p > a > img {
     height: 120px;
-    /*transform: rotate(180deg);
-    opacity: 0.65;
-     filter: grayscale(90%); */
-     filter: brightness(0.55) grayscale(0.85);
-     transition: all 0.5s ease-out allow-discrete;
 }
 
 header p > a > img:hover {
