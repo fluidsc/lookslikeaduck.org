@@ -8,7 +8,7 @@
 <h1 style="font-family: high_speedregular;">Sleepy Coins &lt;&lt;</h1>
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
-Will you halt this eclipse in me?1
+Will you halt this eclipse in me?
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
 </div>   
