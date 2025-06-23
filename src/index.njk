@@ -3,9 +3,7 @@ layout: base.njk
 title: Home
 ---
 
-<ul>
-{% for post in collections.post | reverse %}
-  <li>{{ post.content | safe }}</li>
-{% endfor %}
-</ul>
 
+{% for post in collections.post | reverse %}
+  {{ post.content | safe }}
+{% endfor %}
