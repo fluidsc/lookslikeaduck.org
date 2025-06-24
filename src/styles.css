@@ -93,6 +93,11 @@ footer {
     margin-top: auto;
 }
 
+.divlink {
+    text-decoration: none;
+    color: inherit;
+}
+
 .printer-paper {
     position: relative;
     --f: .5; /* fraction of line the hole occupies */
@@ -133,7 +138,12 @@ footer {
 
 .printer-paper IMG { 
     float: right; 
-    float: right; 
-    opacity:0.30;
+    opacity:0.50;
+    width: 300px;
 }
 
+.printer-paper h1 {
+    font-family: high_speedregular;
+    font-size: 2em;
+    padding: 8px;
+}

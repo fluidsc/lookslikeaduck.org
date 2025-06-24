@@ -1,7 +1,10 @@
+<a href="#" class="divlink">
 <div class="printer-paper" style="rotate: {% randomInteger -2, 2 %}deg;">
-   <img src="{{ post.data.image }}" />
+<img src="{{ post.data.image }}" />
+   <h1>{{ post.data.title  }}</h1>
 
-   <h1>{{ post.data.title | safe }}</h1>
-   {{ post.data.description }}
-<br /><br /><br />
+   <p>
+      {{ post.data.description }}
+   </p>
 </div>
+</a>
