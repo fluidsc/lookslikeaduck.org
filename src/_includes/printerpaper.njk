@@ -1,7 +1,7 @@
----
-   "layout": "base.njk"
----
+<div class="printer-paper" style="rotate: {% randomInteger -2, 2 %}deg;">
+   <img src="{{ post.data.image }}" />
 
-<div class="printer-paper" style="rotate: {% randomInteger -5, 5 %}deg;">
-   {{ content | safe }}
-</div>   
+   <h1>{{ post.data.title | safe }}</h1>
+   {{ post.data.description }}
+<br /><br /><br />
+</div>

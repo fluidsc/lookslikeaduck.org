@@ -101,7 +101,7 @@ footer {
     --r: random(1,45); /* random rotation */
 	display: block;
     overflow: hidden;
-	margin: 1em auto;
+	margin: -1em auto;
 	border: solid 0 #0000;
 	border-width: 0 var(--b);
 	padding:  1ch;
@@ -129,5 +129,11 @@ footer {
     z-index: 100 !important;
     transition: all var(--speed, 800ms) var(--ease, ease);
     filter: brightness(1.0);
+}
+
+.printer-paper IMG { 
+    float: right; 
+    float: right; 
+    opacity:0.30;
 }
 

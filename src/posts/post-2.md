@@ -1,14 +1,14 @@
 ---
-"title": "Sleepy Coins"
-"layout": "printerpaper.njk"
+title: &gt;&lt; Sleepy Coins
+layout: printerpaper.njk
+description: British metal band Sleepy Coins is taking the world by storm while their new album is rated 2.5. Click here to find out why. 
+image: /images/vessel.png
+imageAlt: Whoreship.
 ---
-<div class="printer-paper" style="rotate: {% randomInteger -5, 5 %}deg;">
-   
-<img src="/images/vessel.png" style="float: right; opacity:0.30;" />
+
 <h1 style="font-family: high_speedregular;">Sleepy Coins &lt;&lt;</h1>
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
 Will you halt this eclipse in me?
-</div>   

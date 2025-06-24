@@ -3,7 +3,6 @@ layout: base.njk
 title: Home
 ---
 
-
 {% for post in collections.post | reverse %}
-  {{ post.content | safe }}
+  {% include 'printerpaper.njk' %}
 {% endfor %}
