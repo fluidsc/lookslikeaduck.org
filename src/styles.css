@@ -147,3 +147,7 @@ footer {
     font-size: 2em;
     padding: 8px;
 }
+
+footer p {
+    color: #fff;
+}
