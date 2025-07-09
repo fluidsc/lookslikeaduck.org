@@ -86,6 +86,7 @@ main {
 }
 
 footer {
+    font-size: 1.0em;
     background: #333;
     color: white;
     text-align: center;
